@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MVCAgile Process")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36659cacdadd2c9cb2f96a4aeee04b8159158179")]
 [assembly: System.Reflection.AssemblyProductAttribute("MVCAgile Process")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MVCAgile Process")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

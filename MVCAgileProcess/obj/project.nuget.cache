@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eF3MiSXUA7xCsxhvJjgrNY+nYF419cg4IotAf0N/NP6GAZwSLChBfPumu9/M898gwRLPCsf1UyhNJ6b1B+e/XA==",
+  "dgSpecHash": "t2uacKQX+CeHBSTHkNV6t04RuMggeo1iykG0DKh08wzt4/1mPKQS7YrsuLMu9d6ooQB+XsVtAez96kCu0P8rkA==",
   "success": true,
-  "projectFilePath": "C:\\COMP304-W24\\Assignment4\\MVCAgile Process\\MVCAgile Process\\MVCAgile Process.csproj",
+  "projectFilePath": "C:\\COMP304-W24\\Assignment4\\MVCAgile Process\\MVCAgile Process\\MVCAgileProcess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\najmu\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\najmu\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

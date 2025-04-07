@@ -7775,9 +7775,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\COMP304-W24\\Assignment4\\MVCAgile Process\\MVCAgile Process\\MVCAgile Process.csproj",
-      "projectName": "MVCAgile Process",
-      "projectPath": "C:\\COMP304-W24\\Assignment4\\MVCAgile Process\\MVCAgile Process\\MVCAgile Process.csproj",
+      "projectUniqueName": "C:\\COMP304-W24\\Assignment4\\MVCAgile Process\\MVCAgile Process\\MVCAgileProcess.csproj",
+      "projectName": "MVCAgileProcess",
+      "projectPath": "C:\\COMP304-W24\\Assignment4\\MVCAgile Process\\MVCAgile Process\\MVCAgileProcess.csproj",
       "packagesPath": "C:\\Users\\najmu\\.nuget\\packages\\",
       "outputPath": "C:\\COMP304-W24\\Assignment4\\MVCAgile Process\\MVCAgile Process\\obj\\",
       "projectStyle": "PackageReference",
@@ -7790,7 +7790,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/mrakib4/_packaging/mrakib4/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
