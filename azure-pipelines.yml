@@ -1,0 +1,53 @@
+# ASP.NET Core (.NET Framework)
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- main
+
+pool:
+  name: Default  # Your self-hosted agent pool name
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+# Install the .NET SDK (use .NET 8.0 or your project's version)
+- task: UseDotNet@2
+  displayName: 'Install .NET SDK'
+  inputs:
+    version: '8.0.x'
+
+# Restore NuGet packages
+- task: DotNetCoreCLI@2
+  displayName: 'Restore NuGet packages'
+  inputs:
+    command: 'restore'
+    projects: '**/MVCAgile Process.csproj'
+
+# Build the project
+- task: DotNetCoreCLI@2
+  displayName: 'Build solution'
+  inputs:
+    command: 'build'
+    projects: '**/MVCAgile Process.csproj'
+    arguments: '--configuration $(buildConfiguration)'
+
+# Publish the project
+- task: DotNetCoreCLI@2
+  displayName: 'Publish web app'
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: '**/MVCAgile Process.csproj'
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: true
+
+# Publish the output as an artifact
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish artifact'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'webapp'
+    publishLocation: 'Container'
