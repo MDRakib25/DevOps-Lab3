@@ -24,14 +24,14 @@ steps:
   displayName: 'Restore NuGet packages'
   inputs:
     command: 'restore'
-    projects: '**/MVCAgile Process.csproj'
+    projects: '**/MVCAgileProcess.csproj'
 
 # Build the project
 - task: DotNetCoreCLI@2
   displayName: 'Build solution'
   inputs:
     command: 'build'
-    projects: '**/MVCAgile Process.csproj'
+    projects: '**/MVCAgileProcess.csproj'
     arguments: '--configuration $(buildConfiguration)'
 
 # Publish the project
@@ -40,7 +40,7 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: false
-    projects: '**/MVCAgile Process.csproj'
+    projects: '**/MVCAgileProcess.csproj'
     arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: true
 
